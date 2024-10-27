@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #dcdcdc;
+    box-sizing: border-box;
+    font-family: "Golos Text", sans-serif;
+    /* border: solid red 1px; */
+}
+
+
+a {
+    font-family: "Golos Text", sans-serif;
+    color: #dcdcdc;
+    text-decoration: none;
+}
+
+.header-index {
+    background-image: url("../img/backgroundimg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 90%;
+    display: flexbox;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.logomarca-index img {
+    position: absolute;
+    max-height: 20%;
+    max-width: 30%;
+    min-height: 35%;
+    min-width: 16%;
+    left: 3%;
+    top: 3%;
+}
+
+
+.menu {
+    position: absolute;
+    top: 6%;
+    right: 15%;
+    justify-content: flex-end;
+    display: block;
+    font-family: "Golos Text", sans-serif;
+    margin-left: auto;
+    font-size: 150%;
+}
+
+.menu ul {
+    justify-content: center;
+    gap: 16%;
+    display: flex;
+    list-style-type: none;
+
+}
+
+
+.text-header {
+    position: absolute;
+    display: inline;
+    top: 75%;
+    right: 1%;
+    left: 1%;
+    overflow: hidden;
+}
+
+.text-header h1 {
+    overflow: hidden;
+    text-align: center;
+    font-size: 2.7rem;
+
+}
+
+.text-header p {
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.header-all {
+    background-color: #21909E;
+    display: flexbox;
+    width: 100%;
+    height: 25%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.logomarca-all img {
+    position: absolute;
+    max-height: 90%;
+    max-width: 13%;
+    left: 3%;
+    top: 3%;
+}
+
+
+.menu-all {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    justify-content: flex-end;
+    display: block;
+    font-family: "Golos Text", sans-serif;
+    margin-left: auto;
+    font-size: 2rem;
+}
+
+.menu-all ul {
+    justify-content: center;
+    gap: 16%;
+    display: flex;
+    list-style-type: none;
+}
