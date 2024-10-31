@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #dcdcdc;
+    font-family: "Golos Text", sans-serif;
+    border: solid red 1px;
+}
+
+
+header {
+    display: flex;
+    /* padding-right: 10%; */
+    justify-content: flex-end;
+
+}
+
+
+.menu {
+    font-size: 1.5rem;
+}
+
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    list-style-type: none;
+}
+
+
+.menu li {
+    padding: 2%;
+}
+
+
+.menu a {
+    text-decoration: none;
+    color: #dcdcdc;
+}
+
+
+footer {
+    display: block;
+    height: 25%;
+    width: 100%;
+    color: #FFFDFD;
+    background-color: #B4BABD;
+    position: relative;
+}
+
+
+.header-index {
+    background-color: #00A5C5;
+    /* background-image: url("../img/backgroundimg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    overflow: hidden;
+    width: 100%;
+    /* height: 67vw; */
+}
+
+
+.logomarca-index img {
+    z-index: 1;
+    width: 15%;
+    height: auto;
+    position: absolute;
+    left: 3%;
+    top: 3%;
+}
+
+
+.text-header {
+    position: absolute;
+    top: 80%;
+    left: 1%;
+    right: 1%;
+    text-align: center;
+}
+
+
+.text-header h1 {
+    margin-bottom: 1%;
+    font-size: 2.7rem;
+}
+
+
+.text-header p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* Main Index Styles */
+
+.container-card {
+    display: flex;
+    font-size: 0;
+    gap: 12%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card {
+    display: inline-block;
+    border-radius: 10px;
+    width: 20%;
+    height: 60%;
+    margin: 5% 0% 5% 0%;
+}
+
+
+.container-botton {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20%;
+    margin: 0px 0px 2% 0px;
+}
+
+
+.botton {
+    display: inline-block;
+    font-size: 30px;
+    background-color: #21909E;
+    padding: 1% 3%;
+    border-radius: 20px 0 20px 0;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* Footer Index Styles */
+
+
+.paragraph-footer {
+    margin-left: 17px;
+    display: inline-block;
+    width: 30%;
+    border: black 1px solid;
+    font-size: 1.2rem;
+}
+
+
+.text-footer {
+    display: inline-block;
+    color: #21909E;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 0% 0% 2%;
+}
+
+
+.container-image {
+    display: inline;
+}
+
+
+/* Main about Styles */
+.container-about-main {
+    overflow: auto;
+}
+
+
+.container-about-main h1 {
+    color: #21909E;
+    text-align: center;
+    font-size: 4rem;
+    margin: 4% 0% 4% 0%;
+}
+
+
+.container-about-main p {
+    color: #21909E;
+    text-align: left;
+}
+
+.container-about-main img {
+    height: 35rem;
+    float: right;
+    margin-right: 10%;
+}
+
+.header-all {
+    background-color: #21909E;
+    display: inline-block;
+    width: 100%;
+    height: 25%;
+    /* justify-content: space-between;
+    align-items: center; */
+    }
+
+    .logomarca-all img {
+        max-height: 90%;
+        max-width: 13%;
+        display: inline-block;
+        left: 3%;
+        top: 3%;
+    }
+
+
