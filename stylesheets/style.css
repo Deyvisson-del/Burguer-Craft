@@ -5,26 +5,29 @@
     padding: 0;
     color: #dcdcdc;
     font-family: "Golos Text", sans-serif;
-    /* border: solid red 1px; */
+    border: solid red 1px;
 }
 
 
-header {
+.container-menu {
     display: flex;
-    /* padding-right: 10%; */
-    justify-content: flex-end;    
+    justify-content: flex-end;
 }
 
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #00A5C5; */
-    margin: 5% 0% 5%;
+#img1 {
+    height: 65rem;
+    width: 150rem;
 }
 
+#img2 {
+    height: 65rem;
+    width: 150rem;
+}
 
+#img3 {
+    height: 65rem;
+    width: 150rem;
+}
 
 
 .menu {
@@ -53,20 +56,14 @@ main {
 
 .header-index {
     background-color: #00A5C5;
-    /* background-image: url("../img/backgroundimg.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
     overflow: hidden;
     width: 100%;
     height: 30%;
-    /* height: 67vw; */
 }
 
 
 .logomarca-index img {
-    z-index: 1;
-    width: 7%;
+    width: 10%;
     height: auto;
     position: absolute;
     left: 3%;
@@ -74,42 +71,28 @@ main {
 }
 
 
-.text-header {
-    position: absolute;
-    top: 80%;
-    left: 1%;
-    right: 1%;
-    text-align: center;
-}
-
-
-.text-header h1 {
-    margin-bottom: 1%;
-    font-size: 2.7rem;
-}
-
-
-.text-header p {
-    font-size: 1.2rem;
-    font-weight: bold;
+.carousel-caption{
+    
+    font-size: larger;
+    margin-left: 0;
 }
 
 
 /* Main Index Styles */
 
 .container-card {
-    /* background-color: orange; */
-    height: 100%;
-    width: 45%;
     font-size: 0;
-    gap: 10%;
+    gap: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .card-body {
     width: 95%;
+    height: 65%;
 }
 
 .card-title {
@@ -145,17 +128,36 @@ main {
 
 footer {
     background-color: #B4BABD;
-    /* display: block;
-    height: 25%;
-    width: 100%;
-    color: #FFFDFD;
-    position: relative; */
+    height: 220px;
 }
 
 
 
 .container-footer {
     display: flex;
+    padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.paragraph-footer{
+    margin: 0% 2% 0% 2%;
+    font-size: 120%;
+    color: #FFFDFD;
+}
+
+.container-text-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.text-footer{
+    color: #21909E;
+    font-size: medium;
+    text-align: center;
 }
 
 
@@ -196,8 +198,6 @@ footer {
     display: inline-block;
     width: 100%;
     height: 25%;
-    /* justify-content: space-between;
-    align-items: center; */
 }
 
 .logomarca-all img {
