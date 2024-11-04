@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icone-pag5.png" type="image/png">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-index">
+
+            <div class="logomarca-index">
+                <a href="index.html"><img src="./img/logomarca2.png" alt="Logo marca"></a>
+            </div>
+
+            <nav>
+                <div class="menu">
+
+                    <ul>
+                        <!-- <li><a href="about.html">Craft</a></li> -->
+                        <li><a href="product.html">Produtos</a></li>
+                        <li><a href="store.html">Lojas</a></li>
+                        <li><a href="forms.html">Cadastre-se</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href=""><img src="./img/logoInstagram1.png" alt="Logo do instagram"></a></li>
+                    </ul>
+
+                </div>
+            </nav>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <div>
+            <h1>Cadastre-se</h1>
+        </div>
+
+        <div class="container-body">
+            <!-- <div class="container-forms"> -->
+
+            <form method="post" action="conexao/cadastro.php">
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Digite o seu email">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" placeholder="Digite o seu telefone">
+
+                <label for="cpf">CPF:</label>
+                <input type="number" name="cpf" id="cpf" placeholder="Digite o seu CPF">
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite o sua senha">
+
+                <label for="birthdate">Data de Nascimento:</label>
+                <input type="date" id="datanasc" name="datanasc" placeholder="Digite sua data de Nascimento">
+
+                <button class="botton">Cadastrar</button>
+            </form>
+            <!-- </div> -->
+        </div>
+    </main>
+</body>
+
+</html>

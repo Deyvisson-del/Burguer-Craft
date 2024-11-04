@@ -5,7 +5,7 @@
     padding: 0;
     color: #dcdcdc;
     font-family: "Golos Text", sans-serif;
-    border: solid red 1px;
+    /* border: solid red 1px; */
 }
 
 
@@ -71,8 +71,8 @@
 }
 
 
-.carousel-caption{
-    
+.carousel-caption {
+
     font-size: larger;
     margin-left: 0;
 }
@@ -132,7 +132,6 @@ footer {
 }
 
 
-
 .container-footer {
     display: flex;
     padding-top: 2%;
@@ -141,20 +140,20 @@ footer {
     gap: 5%;
 }
 
-.paragraph-footer{
+.paragraph-footer {
     margin: 0% 2% 0% 2%;
     font-size: 120%;
     color: #FFFDFD;
 }
 
-.container-text-footer{
+.container-text-footer {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2%;
 }
 
-.text-footer{
+.text-footer {
     color: #21909E;
     font-size: medium;
     text-align: center;
@@ -206,4 +205,20 @@ footer {
     display: inline-block;
     left: 3%;
     top: 3%;
+}
+
+/* Página de Cadastro */
+
+.container-body{
+    color: black;
+    background-color: #00A5C5;
+    text-align: center;
+    margin: 3% 0 3%;
+}
+
+.container-forms{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
