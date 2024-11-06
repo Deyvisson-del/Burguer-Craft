@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 8%;
     margin-bottom: 2%;
 }
 
@@ -170,7 +170,7 @@ footer {
 
 .title-about {
     color: #21909E;
-    font-size: 5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     margin: 0% 0% 3% ;
@@ -178,13 +178,13 @@ footer {
 
 .paragraph-about {
     color: #21909E;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 #image-about {
     height: 250px;
     float: right;
-    margin: 0% 6%;
+    margin: 0% 10%;
 }
 
 
@@ -217,9 +217,25 @@ footer {
     margin: 3% 0 3%;
 }
 
+.container-title{
+    color: #00A5C5;
+    margin: 4% 0% 4%;
+    text-align: center;
+}
+
+.costomization-button{
+    color: #00A5C5;
+    height: 20px;
+    display: inline;
+}
+
 .container-forms{
     height: 25%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+}
+
+.container-input{
+    height: 35px;
+    border-radius: 9%;
 }

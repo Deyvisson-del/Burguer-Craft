@@ -23,7 +23,6 @@
                 <div class="menu">
 
                     <ul>
-                        <!-- <li><a href="about.html">Craft</a></li> -->
                         <li><a href="product.html">Produtos</a></li>
                         <li><a href="store.html">Lojas</a></li>
                         <li><a href="forms.html">Cadastre-se</a></li>
@@ -40,35 +39,33 @@
 
     <main>
 
-        <div>
-            <h1>Cadastre-se</h1>
-        </div>
+        <div class="container-title">
+           <h1 class="container-title">Cadastre-se</h1>
+        </div> 
 
-        <div class="container-body">
-            <!-- <div class="container-forms"> -->
+        <div class="container-forms">
 
-            <form method="post" action="conexao/cadastro.php">
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite o seu nome">
+            <form class="container-title" method="post" action="conexao/cadastro.php">
+                <label class="container-title" for="nome">Nome:</label>
+                <input class="container-input" type="text" name="nome" id="nome" placeholder="Digite o seu nome">
 
-                <label for="email">Email:</label>
-                <input type="text" name="email" id="email" placeholder="Digite o seu email">
+                <label class="container-title" for="email">Email:</label>
+                <input class="container-input" type="text" name="email" id="email" placeholder="Digite o seu email">
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" name="telefone" id="telefone" placeholder="Digite o seu telefone">
+                <label class="container-title" for="telefone">Telefone:</label>
+                <input class="container-input" type="tel" name="telefone" id="telefone" placeholder="Digite o seu telefone">
 
-                <label for="cpf">CPF:</label>
-                <input type="number" name="cpf" id="cpf" placeholder="Digite o seu CPF">
+                <label class="container-title" for="cpf">CPF:</label>
+                <input class="container-input" type="number" name="cpf" id="cpf" placeholder="Digite o seu CPF">
 
-                <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha" placeholder="Digite o sua senha">
+                <label class="container-title" for="senha">Senha:</label>
+                <input class="container-input" type="password" name="senha" id="senha" placeholder="Digite o sua senha">
 
-                <label for="birthdate">Data de Nascimento:</label>
-                <input type="date" id="datanasc" name="datanasc" placeholder="Digite sua data de Nascimento">
+                <label class="container-title" for="birthdate">Data de Nascimento:</label>
+                <input class="container-input" type="date" id="datanasc" name="datanasc" placeholder="Digite sua data de Nascimento">
 
-                <button class="botton">Cadastrar</button>
+                <button class="costomization-button">Cadastre-se</button>
             </form>
-            <!-- </div> -->
         </div>
     </main>
 </body>
