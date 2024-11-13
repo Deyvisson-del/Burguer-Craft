@@ -160,7 +160,7 @@ footer {
 
 /* Main about Styles */
 
-.container-about{
+.container-about {
     margin: 5% 2% 5% 2%;
     /* background-color: blue; */
 }
@@ -170,18 +170,21 @@ footer {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    margin: 0% 0% 3% ;
+    margin: 0% 0% 3%;
 }
 
 .paragraph-about {
     color: #21909E;
     font-size: 1.5rem;
+    text-align: justify;
+    margin: 1% 0;
 }
 
 #image-about {
-    height: 250px;
+    height: 350px;
+    width: 650px;
     float: right;
-    margin: 0% 10%;
+    margin: 1% 6%;
 }
 
 
@@ -209,31 +212,31 @@ footer {
 
 /* Página de Cadastro */
 
-.container-body{
+.container-body {
     color: black;
     text-align: center;
     margin: 3% 0 3%;
 }
 
-.container-title{
+.container-title {
     color: #00A5C5;
     margin: 4% 0% 4%;
     text-align: center;
 }
 
-.costomization-button{
+.costomization-button {
     color: #00A5C5;
     height: 20px;
     display: inline;
 }
 
-.container-forms{
+.container-forms {
     height: 25%;
     width: 100%;
     display: inline-block;
 }
 
-.container-input{
+.container-input {
     height: 35px;
     border-radius: 9%;
 }
@@ -243,12 +246,12 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%; 
+    width: 100%;
     height: 300px;
     display: inline-block;
 }
 
-.title-background{
+.title-background {
     font-size: 3rem;
     margin: 6% 0% 0% 5%;
 }

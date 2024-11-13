@@ -1,0 +1,4 @@
+<?php
+    $nome = $_REQUEST
+
+?>
