@@ -345,6 +345,14 @@ footer {
     padding: 5%;
     margin-top: 10%;
 }
+.botton-preco:hover {
+    background-color: #FFFDFD;
+    color: #21909E;
+    border: solid 1px #21909E;
+    overflow: hidden;
+    padding: 5%;
+    margin-top: 10%;
+}
 
 .container-button {
     display: flex;

@@ -1,4 +1,0 @@
-<?php
-    $nome = $_REQUEST
-
-?>
