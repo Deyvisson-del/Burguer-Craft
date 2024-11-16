@@ -5,28 +5,13 @@
     padding: 0;
     color: #dcdcdc;
     font-family: "Golos Text", sans-serif;
-    /* border: solid red 1px; */
+    scroll-behavior: smooth;
+    border: solid red 1px;
 }
 
 
-.container-menu {
-    display: flex;
-    justify-content: flex-end;
-}
-
-#img1 {
-    height: 65rem;
-    width: 150rem;
-}
-
-#img2 {
-    height: 65rem;
-    width: 150rem;
-}
-
-#img3 {
-    height: 65rem;
-    width: 150rem;
+.img-carrossel{
+    width: 100%;
 }
 
 
@@ -56,7 +41,6 @@
 
 .logomarca-index img {
     width: 10%;
-    height: auto;
     position: absolute;
     left: 3%;
     top: 1%;
@@ -72,8 +56,8 @@
 /* Main Index Styles */
 
 .container-card {
-    font-size: 0;
-    gap: 20%;
+    /* font-size: 0; */
+    gap: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,10 +65,10 @@
     margin-bottom: 2%;
 }
 
-.card-body {
+/* .card-body {
     width: 95%;
     height: 65%;
-}
+} */
 
 .card-title {
     display: flex;
@@ -161,7 +145,6 @@ footer {
 
 .container-about {
     margin: 5% 2% 5% 2%;
-    /* background-color: blue; */
 }
 
 .title-about {
@@ -209,7 +192,6 @@ footer {
     top: 3%;
 }
 
-/* Página de Cadastro */
 
 .container-body {
     color: black;
@@ -246,7 +228,6 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
     display: inline-block;
 }
 
@@ -256,13 +237,13 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 350px;
     display: inline-block;
 }
 
 .title-background {
     font-size: 3rem;
-    margin: 6% 0% 0% 5%;
+    margin: 6% 0% 6%;
+    text-align: center;
 }
 
 .container-image-main {
@@ -273,7 +254,7 @@ footer {
 }
 
 .imgcard2 {
-    width: 40%;
+    width: 50%;
 }
 
 
@@ -292,15 +273,15 @@ footer {
 
 .menu-produtos li {
     margin: 1% 0% 3% 10%;
-    height: 200px;
-    width: 200px;
+    height: 30%;
+    width: 20%;
     border: #21909E solid 1px;
 }
 
 
 .imgcard {
-    height: 200px;
-    width: 200px;
+    height: 30%;
+    width: 100%;
 }
 
 .title-product {
@@ -363,6 +344,7 @@ footer {
     background-color: #21909E;
     padding: 2%;
     margin: 0;
+    text-align: center;
 }
 
 .title-delivery {
@@ -373,12 +355,14 @@ footer {
 }
 
 .title-delivery2{
+    text-decoration: none;
+    display: inline-block;
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
     color: #FFFDFD;
     border: #FFFDFD solid 1px;
-    padding: 0;
+    padding: 0 3%;
     margin: 0;
     box-sizing: border-box;
 }
@@ -396,7 +380,7 @@ footer {
 .subtitle-delivery {
     color: #FFFDFD;
     text-align: center;
-    font-size: 1vw;
+    font-size: 2vw;
 }
 
 
@@ -409,14 +393,20 @@ footer {
     display: flex;
     list-style-type: none;
     gap: 5%;
+    justify-content: center;
+    align-items: center;
 }
 
 
 .container-store li {
-    height: 1090px;
-    width: 600px;
+    height: 10%;
+    width: 25%;
     overflow: hidden;
     margin: 10% 0%;
+}
+
+.imgcard3{
+    width: 100%;
 }
 
 .paragraph-store {
@@ -425,10 +415,6 @@ footer {
     font-size: 20px;
 }
 
-.imgcard3{
-    height: 800px;
-    width: 600px;
-}
 
 .container-store-main{
     display: flex;
