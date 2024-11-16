@@ -55,6 +55,7 @@
 
 /* Main Index Styles */
 
+
 .container-card {
     /* font-size: 0; */
     gap: 5%;
@@ -93,6 +94,7 @@
     overflow: hidden;
 }
 
+
 .botton:hover {
     opacity: 0.7;
     text-decoration: underline white;
@@ -101,6 +103,7 @@
 
 /* Footer Index Styles */
 
+/* editar */
 footer {
     background-color: #B4BABD;
     height: 220px;
