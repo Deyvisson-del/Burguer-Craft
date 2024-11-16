@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 
+
+/* configuração da página */
 * {
     margin: 0;
     padding: 0;
@@ -9,52 +11,66 @@
     /* border: solid red 1px; */
 }
 
+/* Início do cabeçalho /Header Start*/
 
-.img-carrossel{
-    width: 100%;
+/* Início da estilização do menu /Start of menu stylization/*/
+
+.header {
+    background-color: #00A5C5;
 }
 
+.logomarca {
+    width: 35%;
+}
 
 .menu {
-    font-size: 1.5rem;
-}
-
-
-.menu ul {
     display: flex;
-    justify-content: flex-end;
-    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
     list-style-type: none;
 }
 
-
-.menu li {
-    padding: 2%;
+.menu .item-logo {
+    padding: 0% 2%;
+    margin-right: auto;
 }
 
+.menu .itens-menu {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 25%;
+    margin-right: 20%;
+}
 
 .menu a {
     text-decoration: none;
-    color: #dcdcdc;
+    color: #ffffff;
 }
 
+.menu a:hover {
+    opacity: 0.7;
+    border-radius: 5px;
+}
+/* Fim da estilização do menu /End of menu stylization*/
 
-.logomarca-index img {
-    width: 10%;
-    position: absolute;
-    left: 3%;
-    top: 1%;
+/* Início das configurações do Carrossel /Home of Carousel settings*/
+.img-carrossel {
+    width: 100%;
 }
 
-
-.carousel-caption {
-    font-size: larger;
-    margin-left: 0;
+.title-carrossel{
+    font-size: 2.7rem;
 }
 
+.paragraph-carrossel{
+    font-size: 1.5rem;
+}
+/* Fim da estilização do carrossel /End of carousel stylization*/
 
-/* Main Index Styles */
+/* Fim do cabeçalho /End of Header*/
 
+
+/* Início da estilização e configuração dos cards /Start of styling and card configuration*/
 
 .container-card {
     /* font-size: 0; */
@@ -66,10 +82,6 @@
     margin-bottom: 2%;
 }
 
-/* .card-body {
-    width: 95%;
-    height: 65%;
-} */
 
 .card-title {
     display: flex;
@@ -97,7 +109,7 @@
 
 .botton:hover {
     opacity: 0.7;
-    text-decoration: underline white;
+    text-decoration: underline #FFFDFD;
 }
 
 
@@ -138,12 +150,6 @@ footer {
 }
 
 
-.container-image {
-    display: inline;
-}
-
-
-
 /* Main about Styles */
 
 .container-about {
@@ -172,30 +178,6 @@ footer {
     margin: 1% 6%;
 }
 
-
-.header-index {
-    background-color: #00A5C5;
-    overflow: hidden;
-    width: 100%;
-    height: 30%;
-}
-
-.header-all {
-    background-color: #21909E;
-    overflow: hidden;
-    width: 100%;
-    height: 20%;
-}
-
-.logomarca-all img {
-    max-height: 90%;
-    max-width: 13%;
-    display: inline-block;
-    left: 3%;
-    top: 3%;
-}
-
-
 .container-body {
     color: black;
     text-align: center;
@@ -212,17 +194,6 @@ footer {
     color: #00A5C5;
     height: 20px;
     display: inline;
-}
-
-.container-forms {
-    height: 25%;
-    width: 100%;
-    display: inline-block;
-}
-
-.container-input {
-    height: 35px;
-    border-radius: 9%;
 }
 
 .container-product {
@@ -260,13 +231,11 @@ footer {
     width: 50%;
 }
 
-
 .title-menu {
     color: #21909E;
     font-size: 2rem;
     margin-left: 3%;
 }
-
 
 .menu-produtos {
     display: flex;
@@ -281,7 +250,6 @@ footer {
     border: #21909E solid 1px;
 }
 
-
 .imgcard {
     height: 30%;
     width: 100%;
@@ -295,15 +263,14 @@ footer {
     margin: 5%;
 }
 
-
-.title-store{
+.title-store {
     color: #21909E;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
 }
 
-.subtitle-store{
+.subtitle-store {
     color: #21909E;
     font-weight: 700;
 }
@@ -329,6 +296,7 @@ footer {
     padding: 5%;
     margin-top: 10%;
 }
+
 .botton-preco:hover {
     background-color: #FFFDFD;
     color: #21909E;
@@ -357,7 +325,7 @@ footer {
     color: #FFFDFD;
 }
 
-.title-delivery2{
+.title-delivery2 {
     text-decoration: none;
     display: inline-block;
     font-size: 3rem;
@@ -386,11 +354,9 @@ footer {
     font-size: 2vw;
 }
 
-
-.container-menu-product{
+.container-menu-product {
     margin-bottom: 5%;
 }
-
 
 .container-store {
     display: flex;
@@ -400,7 +366,6 @@ footer {
     align-items: center;
 }
 
-
 .container-store li {
     height: 10%;
     width: 25%;
@@ -408,7 +373,7 @@ footer {
     margin: 10% 0%;
 }
 
-.imgcard3{
+.imgcard3 {
     width: 100%;
 }
 
@@ -418,8 +383,7 @@ footer {
     font-size: 20px;
 }
 
-
-.container-store-main{
+.container-store-main {
     display: flex;
     justify-content: center;
     align-items: center;
