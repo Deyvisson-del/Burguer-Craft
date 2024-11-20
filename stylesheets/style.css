@@ -68,13 +68,9 @@
     font-size: 1.5rem;
 }
 
-/* Fim da estilização do carrossel /End of carousel stylization*/
-
-/* Fim do cabeçalho /End of Header*/
-
-
-/* Início da estilização e configuração dos cards /Start of styling and card configuration*/
-
+/* ------------------------------------------------ */
+/* Estilo dos cards*/
+/* ------------------------------------------------ */
 .container-card {
     /* font-size: 0; */
     gap: 1%;
@@ -118,6 +114,9 @@
     text-decoration: underline #FFFDFD;
 }
 
+/* ------------------------------------------------ */
+/* Estilo do sobre */
+/* ------------------------------------------------ */
 .container-about {
     padding: 2%;
     margin-bottom: 15%;
@@ -374,7 +373,7 @@ footer {
 
 .paragraph-footer {
     margin: 0% 2% 0% 2%;
-    font-size: 120%;
+    font-size: 1.5rem;
     color: #FFFDFD;
 }
 
@@ -382,12 +381,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 2% 0%;
 }
 
 .text-footer {
     color: #21909E;
-    font-size: medium;
+    font-size: 120%;
     text-align: center;
 }
 
