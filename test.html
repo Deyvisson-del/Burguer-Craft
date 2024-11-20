@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -10,12 +10,12 @@
 
 <body>
     <style>
-        /* Estilo geral */
+
         body {
             font-family: Arial, sans-serif;
         }
 
-        /* Botão para abrir o modal */
+        
         .botao {
             padding: 10px 20px;
             background-color: #007BFF;
@@ -30,23 +30,23 @@
             background-color: #0056b3;
         }
 
-        /* Modal - fundo */
+
         .modal {
             display: none;
-            /* Inicialmente oculto */
+
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
-            /* Fundo semitransparente */
+
             z-index: 1000;
             justify-content: center;
             align-items: center;
         }
 
-        /* Conteúdo do Modal */
+
         .modal-conteudo {
             background: white;
             padding: 20px;
@@ -56,7 +56,6 @@
             text-align: center;
         }
 
-        /* Botão para fechar o modal */
         .fechar {
             position: absolute;
             top: 10px;
@@ -65,27 +64,42 @@
             font-weight: bold;
             cursor: pointer;
         }
-    </style>
-    <!-- Botão para abrir o modal -->
-    <button id="abrir-modal" class="botao">Abrir Modal</button>
-    <a href="index.html">Voltar</a>
 
-    <!-- Estrutura do Modal -->
-    <div id="modal" class="modal">
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+
+        }
+
+        .box:hover {
+            opacity: 0;
+
+        }
+    </style> -->
+<!-- Botão para abrir o modal -->
+<!-- <button id="abrir-modal" class="botao">Abrir Modal</button>
+    <a href="index.html">Voltar</a> -->
+
+<!-- Estrutura do Modal -->
+<!-- <div id="modal" class="modal">
         <div class="modal-conteudo">
             <span id="fechar-modal" class="fechar">&times;</span>
             <h2>Bem-vindo ao Modal!</h2>
             <p>Esta é uma pequena tela dentro da página.</p>
             <button id="outro-botao">Outro Botão</button>
         </div>
-    </div>
+    </div> -->
 
-    <script src="script.js"></script>
+
+<!-- <script src="script.js"></script>
 </body>
 
-</html>
+</html> -->
 
-<script>
+<!-- <script>
     // Seleciona os elementos
     const botaoAbrir = document.getElementById("abrir-modal");
     const modal = document.getElementById("modal");
@@ -108,4 +122,81 @@
         }
     });
 
-</script>
+</script> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Transition</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 200vh;
+            /* Para permitir o scroll */
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 100vh;
+            /* Cards começam a aparecer após o scroll */
+        }
+
+        .card {
+            width: 250px;
+            height: 150px;
+            background-color: #f3f3f3;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(50px);
+            /* Começa deslocado para baixo */
+            transition: opacity 1s ease, transform 1s ease;
+            /* Aumentei a duração da transição */
+        }
+
+        .card.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        // Função para verificar se um elemento está visível na viewport
+        const isVisible = (el) => {
+            const rect = el.getBoundingClientRect();
+            return rect.top < window.innerHeight && rect.bottom > 0;
+        };
+
+        // Função para adicionar/remover classe "show" quando o card está visível
+        const handleScroll = () => {
+            cards.forEach((card) => {
+                if (isVisible(card)) {
+                    card.classList.add('show');
+                } else {
+                    card.classList.remove('show');  // Remove a classe "show" quando o card sai da tela
+                }
+            });
+        };
+
+        // Adiciona evento de scroll
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+
+</html>

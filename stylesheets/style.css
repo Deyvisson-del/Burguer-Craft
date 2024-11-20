@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 
-
-/* configuração da página */
+/* ------------------------------------------------ */
+/*Estilo Global */
+/* ------------------------------------------------ */
 * {
     margin: 0;
     padding: 0;
@@ -10,9 +11,9 @@
     /* border: solid red 1px; */
 }
 
-/* Início do cabeçalho /Header Start*/
-
-/* Início da estilização do menu /Start of menu stylization/*/
+/* ------------------------------------------------ */
+/* Estilo do Cabeçalho
+/* ------------------------------------------------ */
 
 .header {
     background-color: #00A5C5;
@@ -37,33 +38,36 @@
 .menu .itens-menu {
     font-size: 1.5rem;
     display: flex;
-    gap: 25%;
+    gap: 10%;
     margin-right: 20%;
 }
 
 .menu a {
     text-decoration: none;
     color: #ffffff;
+    transition: opacity 0.3s ease;
 }
 
 .menu a:hover {
     opacity: 0.7;
     border-radius: 5px;
 }
-/* Fim da estilização do menu /End of menu stylization*/
 
-/* Início das configurações do Carrossel /Home of Carousel settings*/
+/* ------------------------------------------------ */
+/* Estilo do Carrossel*/
+/* ------------------------------------------------ */
 .img-carrossel {
     width: 100%;
 }
 
-.title-carrossel{
+.title-carrossel {
     font-size: 2.7rem;
 }
 
-.paragraph-carrossel{
+.paragraph-carrossel {
     font-size: 1.5rem;
 }
+
 /* Fim da estilização do carrossel /End of carousel stylization*/
 
 /* Fim do cabeçalho /End of Header*/
@@ -73,12 +77,11 @@
 
 .container-card {
     /* font-size: 0; */
-    gap: 5%;
+    gap: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8%;
-    margin-bottom: 2%;
+    margin: 8% 2% 2%;
 }
 
 
@@ -86,6 +89,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.card-body {
+    height: 50%;
+    width: 15%;
 }
 
 
@@ -101,7 +108,7 @@
     border-radius: 20px 0 20px 0;
     cursor: pointer;
     border: none;
-    margin: 0;
+    margin: 5% 0%;
     overflow: hidden;
 }
 
@@ -126,13 +133,13 @@
 
 .paragraph-about {
     color: #21909E;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
     text-indent: 30px
 }
 
 .image-about {
-    width: 19%;
+    width: 25%;
     float: right;
     margin: 0% 6%;
 }
@@ -225,7 +232,7 @@
 
 .title-store {
     color: #21909E;
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
 }
@@ -233,7 +240,7 @@
 .subtitle-store {
     color: #21909E;
     font-weight: 700;
-    margin: 1% 0% 0%;
+    /* margin: 1% 0% 0%; */
 }
 
 .menu-preco {
@@ -322,14 +329,13 @@
 .container-store {
     display: flex;
     list-style-type: none;
-    gap: 5%;
+    gap: 2%;
     justify-content: center;
-    align-items: center;
 }
 
 .container-store li {
     height: 10%;
-    width: 25%;
+    width: 20%;
     overflow: hidden;
     margin: 10% 0%;
 }
@@ -349,19 +355,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.maps{
-    margin: 2% 5% 0% 5%;
+    overflow: hidden;
 }
 
 footer {
     height: 220px;
+    background-color: #B4BABD;
 }
 
 
 .container-footer {
-    background-color: #B4BABD;
     display: flex;
     padding-top: 2%;
     justify-content: center;
