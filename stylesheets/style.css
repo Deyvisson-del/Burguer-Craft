@@ -72,7 +72,7 @@
 /* Estilo dos cards*/
 /* ------------------------------------------------ */
 .container-card {
-    /* font-size: 0; */
+    font-size: 0;
     gap: 1%;
     display: flex;
     justify-content: center;
@@ -86,9 +86,22 @@
     justify-content: center;
     align-items: center;
 }
+
 .card-body {
+    border-radius: 9px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
     height: 50%;
     width: 15%;
+    
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card-img-top:hover {
+    opacity: 0.7;
 }
 
 
@@ -100,11 +113,11 @@
     justify-content: center;
     align-items: center;
     background-color: #21909E;
-    padding: 3% 5% 3% 5%;
+    padding: 3% 0% 3% 0%;
     border-radius: 20px 0 20px 0;
     cursor: pointer;
     border: none;
-    margin: 5% 0%;
+    margin: 5% 5%;
     overflow: hidden;
 }
 
@@ -138,7 +151,7 @@
 }
 
 .image-about {
-    width: 25%;
+    width: 15%;
     float: right;
     margin: 0% 6%;
 }
@@ -211,13 +224,12 @@
 
 .menu-produtos li {
     margin: 1% 0% 3% 10%;
-    height: 30%;
-    width: 20%;
+    height: 10%;
+    width: 10%;
     border: #21909E solid 1px;
 }
 
 .imgcard {
-    height: 30%;
     width: 100%;
 }
 
@@ -259,23 +271,41 @@
     background-color: #21909E;
     color: #FFFDFD;
     border: none;
-    overflow: hidden;
-    padding: 5%;
-    margin-top: 10%;
+    border-radius: 5px;
+    padding: 2%;
+    cursor: pointer;
+    margin: 0% 2% 2%;
 }
 
 .botton-preco:hover {
     background-color: #FFFDFD;
     color: #21909E;
     border: solid 1px #21909E;
-    overflow: hidden;
-    padding: 5%;
-    margin-top: 10%;
+    cursor: pointer;
+    
+}
+
+.botton-detalhes {
+    margin: 0% 2% 2%;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #FFFDFD;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.botton-detalhes:hover {
+    cursor: pointer;
+    background-color: #FFFDFD;
+    color: #21909E;
+    border: solid 1px #21909E;
 }
 
 .container-button {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 .container-delivery {
@@ -399,8 +429,4 @@ footer {
     text-decoration: none;
     color: #f7f7f7;
     border-radius: 9px;
-}
-
-.bt-top:hover {
-    opacity: 0.7;
 }
