@@ -71,7 +71,9 @@
 /* ------------------------------------------------ */
 /* Estilo dos cards*/
 /* ------------------------------------------------ */
-
+.carousel-item {
+    height: 35rem;
+}
 
 .card-title {
     display: flex;
@@ -84,7 +86,7 @@
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
     height: 50%;
     width: 15%;
-    
+
 }
 
 .card.show {
@@ -235,7 +237,7 @@
     color: #21909E;
     border: solid 1px #21909E;
     cursor: pointer;
-    
+
 }
 
 .botton-detalhes {
@@ -305,7 +307,7 @@
 
 footer {
     height: 220px;
-    background-color: #B4BABD;
+    background-color: #414542;
 }
 
 .paragraph-footer {
@@ -334,6 +336,12 @@ footer {
 /* ------------------------------------------------ */
 /* Container's */
 /* ------------------------------------------------ */
+.img-carrossel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
 .container-card {
     font-size: 0;
     gap: 1%;
