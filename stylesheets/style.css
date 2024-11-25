@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
 
+
 /* ------------------------------------------------ */
 /*Estilo Global */
 /* ------------------------------------------------ */
@@ -75,24 +76,35 @@
     height: 35rem;
 }
 
+
+.container-card {
+    gap: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 2% 2%;
+}
+
+
 .card-title {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+
 .card-body {
     border-radius: 9px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-    height: 50%;
-    width: 15%;
-
+    height: auto;
+    width: 100%;
 }
 
 .card.show {
     opacity: 1;
     transform: translateY(0);
 }
+
 
 .card-img-top:hover {
     opacity: 0.7;
@@ -124,6 +136,8 @@
 /* ------------------------------------------------ */
 /* Estilo do sobre */
 /* ------------------------------------------------ */
+
+
 
 .title-about {
     color: #21909E;
@@ -237,7 +251,7 @@
     color: #21909E;
     border: solid 1px #21909E;
     cursor: pointer;
-
+    
 }
 
 .botton-detalhes {
@@ -332,6 +346,16 @@ footer {
     color: #f7f7f7;
     border-radius: 9px;
 }
+/* ------------------------------------------------ */
+/* Estilo do textos */
+/* ------------------------------------------------ */
+
+.description{
+    margin: 5%;
+    color: #00A5C5;
+    text-align: center;
+    font-size: 1.8rem;
+}
 
 /* ------------------------------------------------ */
 /* Container's */
@@ -340,15 +364,6 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
-}
-
-.container-card {
-    font-size: 0;
-    gap: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 8% 2% 2%;
 }
 
 .container-about {
