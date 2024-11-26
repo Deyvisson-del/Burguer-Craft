@@ -79,7 +79,10 @@
 .carousel-item {
     height: 35rem;
 }
-
+/* 
+.slide{
+    margin: 5% 0 0;
+} */
 
 .container-card {
     gap: 1%;
@@ -383,6 +386,7 @@
     background-repeat: no-repeat;
     width: 100%;
     display: inline-block;
+    margin: 5% 0 0;
 }
 
 .container-store-header {
@@ -392,6 +396,7 @@
     background-repeat: no-repeat;
     width: 100%;
     display: inline-block;
+    margin: 5% 0 0;
 }
 
 .container-body {
