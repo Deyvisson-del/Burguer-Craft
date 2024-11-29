@@ -1,0 +1,36 @@
+/* ------------------------------------------------ */
+/* Estilo do footer */
+/* ------------------------------------------------ */
+
+.container-footer {
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.container-text-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2% 0%;
+}
+
+.footer {
+    margin: 5% 0 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    border-top: solid 3px #21909E;
+}
+
+.paragraph-footer {
+    margin: 0% 2% 0% 2%;
+    font-size: 1.5rem;
+    color: #FFFDFD;
+}
+
+.text-footer {
+    color: #21909E;
+    font-size: 120%;
+    text-align: center;
+}

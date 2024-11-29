@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap");
-
+@import './header.css';
+@import './cards.css';
+@import'./footer.css';
 
 /* ------------------------------------------------ */
 /*Estilo Global */
 /* ------------------------------------------------ */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: "Golos Text", sans-serif;
@@ -13,131 +16,8 @@
 }
 
 /* ------------------------------------------------ */
-/* Estilo do Cabeçalho
-/* ------------------------------------------------ */
-
-.header {
-    background-color: #00A5C5;
-}
-
-.logomarca {
-    width: 35%;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-}
-
-.menu .item-logo {
-    padding: 0% 2%;
-    margin-right: auto;
-}
-
-.menu .itens-menu {
-    font-size: 1.5rem;
-    display: flex;
-    gap: 10%;
-    margin-right: 20%;
-}
-
-.menu a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: opacity 0.3s ease;
-}
-
-.menu a:hover {
-    opacity: 0.7;
-    border-radius: 5px;
-}
-
-/* ------------------------------------------------ */
-/* Estilo do Carrossel*/
-/* ------------------------------------------------ */
-.img-carrossel {
-    width: 100%;
-}
-
-.title-carrossel {
-    font-size: 2.7rem;
-}
-
-.paragraph-carrossel {
-    font-size: 1.5rem;
-}
-
-/* ------------------------------------------------ */
-/* Estilo dos cards*/
-/* ------------------------------------------------ */
-.carousel-item {
-    height: 35rem;
-}
-
-
-.container-card {
-    gap: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5% 2% 2%;
-}
-
-
-.card-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.card-body {
-    border-radius: 9px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-    height: auto;
-    width: 100%;
-}
-
-.card.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.card-img-top:hover {
-    opacity: 0.7;
-}
-
-
-.botton {
-    color: #FFFDFD;
-    text-decoration: none;
-    display: flex;
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    background-color: #21909E;
-    padding: 3% 0% 3% 0%;
-    border-radius: 20px 0 20px 0;
-    cursor: pointer;
-    border: none;
-    margin: 5% 5%;
-    overflow: hidden;
-}
-
-
-.botton:hover {
-    opacity: 0.7;
-    text-decoration: underline #FFFDFD;
-}
-
-/* ------------------------------------------------ */
 /* Estilo do sobre */
 /* ------------------------------------------------ */
-
-
 
 .title-about {
     color: #21909E;
@@ -319,22 +199,6 @@
     text-indent: 1%;
 }
 
-footer {
-    height: 220px;
-    background-color: #414542;
-}
-
-.paragraph-footer {
-    margin: 0% 2% 0% 2%;
-    font-size: 1.5rem;
-    color: #FFFDFD;
-}
-
-.text-footer {
-    color: #21909E;
-    font-size: 120%;
-    text-align: center;
-}
 
 .bt-top {
     padding: 10px 1%;
@@ -378,6 +242,7 @@ footer {
     background-repeat: no-repeat;
     width: 100%;
     display: inline-block;
+    margin: 5% 0 0;
 }
 
 .container-store-header {
@@ -387,6 +252,7 @@ footer {
     background-repeat: no-repeat;
     width: 100%;
     display: inline-block;
+    margin: 5% 0 0;
 }
 
 .container-body {
@@ -446,17 +312,3 @@ footer {
     overflow: hidden;
 }
 
-.container-footer {
-    display: flex;
-    padding-top: 2%;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-}
-
-.container-text-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2% 0%;
-}

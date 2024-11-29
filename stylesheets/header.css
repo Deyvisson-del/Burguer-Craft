@@ -1,0 +1,59 @@
+/* ------------------------------------------------ */
+/* Estilo do Cabeçalho
+/* ------------------------------------------------ */
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: #00A5C5;
+    z-index: 1000;
+}
+
+.logomarca {
+    width: 20%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.menu .item-logo {
+    padding: 0% 2%;
+    margin-right: auto;
+}
+
+.menu .itens-menu {
+    font-size: 1.5rem;
+    display: flex;
+    gap: 10%;
+    margin-right: 20%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: opacity 0.3s ease;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+    border-radius: 5px;
+}
+
+/* ------------------------------------------------ */
+/* Estilo do Carrossel*/
+/* ------------------------------------------------ */
+.img-carrossel {
+    width: 100%;
+}
+
+.title-carrossel {
+    font-size: 2.7rem;
+}
+
+.paragraph-carrossel {
+    font-size: 1.5rem;
+}
