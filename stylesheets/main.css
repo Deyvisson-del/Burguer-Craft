@@ -1,0 +1,350 @@
+.title-menu {
+    color: #21909E;
+    font-size: 2rem;
+    margin-left: 3%;
+}
+
+.menu-produtos {
+    display: flex;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.menu-produtos li {
+    margin: 1% 0% 3% 10%;
+    height: 10%;
+    width: 10%;
+    border: #21909E solid 1px;
+}
+
+/* ------------------------------------------------ */
+/* Estilo do sobre */
+/* ------------------------------------------------ */
+.container-about {
+    padding: 2%;
+    margin-bottom: 15%;
+}
+.title-about {
+    color: #21909E;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 2%;
+}
+
+.paragraph-about {
+    color: #21909E;
+    font-size: 1.5rem;
+    text-align: justify;
+    text-indent: 30px
+}
+
+.image-about {
+    width: 15%;
+    float: right;
+    margin: 0% 6%;
+}
+
+/* ------------------------------------------------ */
+/* Estilo dos cards*/
+/* ------------------------------------------------ */
+
+/* 
+.slide{
+    margin: 5% 0 0;
+} */
+
+
+.container-card {
+    gap: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 2% 2%;
+}
+
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-body {
+    border-radius: 9px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    height: auto;
+    width: 100%;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.card-img-top:hover {
+    opacity: 0.7;
+}
+
+
+.botton {
+    color: #FFFDFD;
+    text-decoration: none;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #21909E;
+    padding: 3% 0% 3% 0%;
+    border-radius: 20px 0 20px 0;
+    cursor: pointer;
+    border: none;
+    margin: 5% 5%;
+    overflow: hidden;
+}
+
+
+.botton:hover {
+    opacity: 0.7;
+    text-decoration: underline #FFFDFD;
+}
+
+.imgcard2 {
+    width: 50%;
+}
+
+/* ------------------------------------------------ */
+/* Estilo do carrossel*/
+/* ------------------------------------------------ */
+.carousel-item {
+    height: 35rem;
+}
+
+.img-carrossel {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.imgcard {
+    width: 100%;
+}
+
+.title-product {
+    color: #21909E;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    margin: 5%;
+}
+
+.title-store {
+    color: #21909E;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle-store {
+    color: #21909E;
+    font-weight: 700;
+    /* margin: 1% 0% 0%; */
+}
+
+.menu-preco {
+    display: flex;
+    padding: 20px;
+    list-style-type: none;
+}
+
+.menu-preco li {
+    margin-left: 10%;
+    height: 2%;
+    width: 2%;
+    align-items: end;
+}
+
+.botton-preco {
+    background-color: #21909E;
+    color: #FFFDFD;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+    cursor: pointer;
+    margin: 0% 2% 2%;
+}
+
+.botton-preco:hover {
+    background-color: #FFFDFD;
+    color: #21909E;
+    border: solid 1px #21909E;
+    cursor: pointer;
+    
+}
+
+.botton-detalhes {
+    margin: 0% 2% 2%;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #FFFDFD;
+    border: none;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.botton-detalhes:hover {
+    cursor: pointer;
+    background-color: #FFFDFD;
+    color: #21909E;
+    border: solid 1px #21909E;
+}
+
+
+.title-delivery {
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFDFD;
+}
+
+.title-delivery2 {
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFDFD;
+    border: #FFFDFD solid 1px;
+    padding: 0 3%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.title-delivery2:hover {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #21909E;
+    background-color: #FFFDFD;
+    border: #FFFDFD solid 1px;
+    cursor: pointer;
+}
+
+.subtitle-delivery {
+    color: #FFFDFD;
+    text-align: center;
+    font-size: 2vw;
+}
+
+.paragraph-store {
+    margin-top: 3%;
+    color: #21909E;
+    font-size: 20px;
+    text-indent: 1%;
+}
+
+
+.bt-top {
+    padding: 10px 1%;
+    position: fixed;
+    background-color: #0199dd;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: #f7f7f7;
+    border-radius: 9px;
+}
+/* ------------------------------------------------ */
+/* Estilo do textos */
+/* ------------------------------------------------ */
+
+.description{
+    margin: 5%;
+    color: #00A5C5;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/* ------------------------------------------------ */
+/* Container's */
+/* ------------------------------------------------ */
+
+
+.container-product {
+    background-image: url('../img/imageproduct.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    margin: 5% 0 0;
+}
+
+.container-store-header {
+    background-image: url('../img/imagestore.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+    margin: 5% 0 0;
+}
+
+.container-body {
+    color: black;
+    text-align: center;
+    margin: 3% 0 3%;
+}
+
+.container-title {
+    color: #00A5C5;
+    margin: 4% 0% 4%;
+    text-align: center;
+}
+
+.container-image-main {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.container-delivery {
+    background-color: #21909E;
+    padding: 2%;
+    margin: 0;
+    text-align: center;
+}
+
+.container-menu-product {
+    margin-bottom: 5%;
+}
+
+.container-store {
+    display: flex;
+    list-style-type: none;
+    gap: 2%;
+    justify-content: center;
+}
+
+.container-store li {
+    height: 10%;
+    width: 20%;
+    overflow: hidden;
+    margin: 10% 0%;
+}
+
+.container-store-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
