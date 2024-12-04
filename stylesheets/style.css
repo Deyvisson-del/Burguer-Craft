@@ -4,6 +4,18 @@
 @import './footer.css';
 
 /* ------------------------------------------------ */
+/*Estilo Global */
+/* ------------------------------------------------ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Golos Text", sans-serif;
+    scroll-behavior: smooth;
+    /* border: solid red 1px; */
+}
+
+/* ------------------------------------------------ */
 /*Responsive */
 /* ------------------------------------------------ */
 @media (max-width:425px) {
@@ -81,14 +93,3 @@
     }
 }
 
-/* ------------------------------------------------ */
-/*Estilo Global */
-/* ------------------------------------------------ */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Golos Text", sans-serif;
-    scroll-behavior: smooth;
-    /* border: solid red 1px; */
-}
