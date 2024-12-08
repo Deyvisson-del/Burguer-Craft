@@ -1,7 +1,6 @@
 /* ------------------------------------------------ */
 /* Estilo do footer */
 /* ------------------------------------------------ */
-
 .container-footer {
     display: flex;
     padding-top: 2%;
@@ -19,8 +18,7 @@
 
 .footer {
     margin: 5% 0 0;
-    background: linear-gradient(to bottom, rgba(33, 144, 158, 0.9), transparent);
-    border-top: solid 3px #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
 }
 
 .paragraph-footer {
@@ -30,7 +28,7 @@
 }
 
 .text-footer {
-    color: #21909E;
+    color: #fcfcfc;
     font-size: 120%;
     text-align: center;
 }

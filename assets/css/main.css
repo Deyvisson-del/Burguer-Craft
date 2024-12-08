@@ -24,8 +24,13 @@
     padding: 2%;
     margin-bottom: 15%;
 }
+
 .title-about {
-    color: #21909E;
+    /* color: #21909E; */
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
@@ -33,7 +38,11 @@
 }
 
 .paragraph-about {
-    color: #21909E;
+    font-weight: 500;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
     text-align: justify;
     text-indent: 30px
@@ -96,7 +105,7 @@
     font-size: 2rem;
     justify-content: center;
     align-items: center;
-    background-color: #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
     padding: 3% 0% 3% 0%;
     border-radius: 20px 0 20px 0;
     cursor: pointer;
@@ -107,7 +116,7 @@
 
 
 .botton:hover {
-    opacity: 0.7;
+    opacity: 0.8;
     text-decoration: underline #FFFDFD;
 }
 
@@ -133,7 +142,10 @@
 }
 
 .title-product {
-    color: #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
@@ -141,14 +153,20 @@
 }
 
 .title-store {
-    color: #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
 }
 
 .subtitle-store {
-    color: #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 700;
     /* margin: 1% 0% 0%; */
 }
@@ -181,7 +199,7 @@
     color: #21909E;
     border: solid 1px #21909E;
     cursor: pointer;
-    
+
 }
 
 .botton-detalhes {
@@ -240,7 +258,10 @@
 
 .paragraph-store {
     margin-top: 3%;
-    color: #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20px;
     text-indent: 1%;
 }
@@ -256,13 +277,17 @@
     color: #f7f7f7;
     border-radius: 9px;
 }
+
 /* ------------------------------------------------ */
 /* Estilo do textos */
 /* ------------------------------------------------ */
 
-.description{
+.description {
     margin: 5%;
-    color: #00A5C5;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     font-size: 1.2rem;
 }
@@ -317,7 +342,7 @@
 }
 
 .container-delivery {
-    background-color: #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
     padding: 2%;
     margin: 0;
     text-align: center;

@@ -20,12 +20,12 @@
 /* ------------------------------------------------ */
 @media (max-width:425px) {
 
-    .item-logo{
+    /* .item-logo{
         background-color: blue;
-    }
+    } */
 
 
-    .header {
+    /* .header {
         height: 10%;
     }
 
@@ -53,12 +53,12 @@
         width: 100%;
         display: inline-block;
         margin: 10% 0 0;
-    }
+    } */
 }
 
 @media (max-width:375px) {
 
-    .item-logo{
+    /* .item-logo{
         background-color:red;
     }
 
@@ -90,5 +90,5 @@
         width: 100%;
         display: inline-block;
         margin: 10% 0 0;
-    }
+    } */
 }

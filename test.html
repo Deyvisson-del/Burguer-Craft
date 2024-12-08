@@ -1,130 +1,223 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Hambúrguer Animado</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <style>
+        /* Estilo geral */
         body {
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            background: linear-gradient(45deg, #6a11cb, #2575fc);
-            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: linear-gradient(45deg, #2575fc, #00A5c5);
+            overflow: hidden;
         }
 
-        .animacao {
-            width: 50px;
+        /* Contêiner para os 3 hambúrgueres */
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* Estilo geral do hambúrguer */
+        .hamburguer {
+            position: relative;
+            width: 160px;
+            height: 300px;
+            animation: montagemLoop 4s ease-in-out infinite;
+        }
+
+        /* Ingredientes gerais */
+        .ingredient {
+            position: absolute;
+            width: 140px;
+            height: 30px;
+            animation: montagem 1s ease-in-out forwards;
+            opacity: 0;
+            left: 0;
+        }
+
+        /* Ingredientes específicos */
+        .top-bun {
+            background: #f4a460;
+            border-radius: 50% 50% 0% 0;
             height: 50px;
-            background-color: #fff;
-            border-radius: 10px;
-            animation: mover 3s infinite alternate;
+            margin-top: 19%;
+            animation-delay: 0s;
         }
 
-        @keyframes mover {
-            0% {
-                transform: translateX(0);
-                background-color: #fff;
-            }
+        .lettuce {
+            background: #7cfc00;
+            border-radius: 10px;
+            height: 15px;
+            animation-delay: 0.2s;
+        }
 
-            50% {
-                transform: translateX(200px);
-                background-color: #f09;
+        .cheese {
+            background: #ffd700;
+            border-radius: 5px;
+            height: 20px;
+            animation-delay: 0.4s;
+        }
+
+        .patty {
+            background: #8b4513;
+            border-radius: 5px;
+            height: 25px;
+            animation-delay: 0.6s;
+        }
+
+        .bottom-bun {
+            background: #f4a460;
+            border-radius: 0 0 50% 50%;
+            height: 40px;
+            animation-delay: 0.8s;
+        }
+
+        /* Espaçamento entre os ingredientes */
+        .hamburguer .ingredient:nth-child(2) {
+            top: 82px;
+            /* Alface */
+        }
+
+        .hamburguer .ingredient:nth-child(3) {
+            top: 100px;
+            /* Queijo */
+        }
+
+
+
+        .hamburguer .ingredient:nth-child(4) {
+            top: 120px;
+            /* Carne */
+        }
+
+        .hamburguer .ingredient:nth-child(5) {
+            top: 145px;
+            /* Pão de baixo */
+        }
+
+        /* Animação de montagem dos ingredientes */
+        @keyframes montagem {
+            0% {
+                transform: translateY(-300px);
+                opacity: 0;
             }
 
             100% {
-                transform: translateX(400px);
-                background-color: #0ff;
+                transform: translateY(0);
+                opacity: 1;
             }
         }
 
-        .rows {
-            display: inline-block;
+        /* Animação de loop da montagem */
+        @keyframes montagemLoop {
+            0% {
+                transform: translateY(-100px);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(-100px);
+            }
         }
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        .btn {
+        /* Estilo para os hambúrgueres no contêiner */
+        .container {
             display: flex;
-            align-items: center;
             justify-content: center;
+            gap: 40px;
         }
 
-        .item1 {
-            background-color: red;
-            color: white;
+        /* Tela de Carregamento */
+        .loading-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            z-index: 9999;
+        }
+
+        /* Animação do Carregador */
+        .loader {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        /* Animação de rotação */
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
     </style>
 
-    <ol>
-        <li class="item1">
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, labore error fuga quisquam, praesentium
-                aspernatur illum repellat velit reiciendis harum est eligendi sit ab esse dolor facere. Aliquam, ipsa
-                sequi?</div>
-        </li>
-        <li class="item2"></li>
-        <li class="item3"></li>
-        <li class="item4"></li>
-        <li class="item5"></li>
-    </ol>
+    <!-- Tela de Carregamento -->
+    <div class="loading-screen">
+        <div class="loader"></div>
+    </div>
 
-    <div class="animacao"></div>
+    <!-- Contêiner de Hambúrgueres -->
+    <div class="container">
+        <!-- Hambúrguer 1 -->
+        <!-- <div class="hamburguer">
+            <div class="ingredient top-bun"></div>
+            <div class="ingredient lettuce"></div>
+            <div class="ingredient cheese"></div>
+            <div class="ingredient patty"></div>
+            <div class="ingredient bottom-bun"></div>
+        </div> -->
 
-
-    <form onsubmit="" action="">
-
-        <div class="modal">
-            <h1></h1>
-            <h2></h2>
+        <!-- Hambúrguer 2 -->
+        <div class="hamburguer">
+            <div class="ingredient top-bun"></div>
+            <div class="ingredient lettuce"></div>
+            <div class="ingredient cheese"></div>
+            <div class="ingredient patty"></div>
+            <div class="ingredient bottom-bun"></div>
         </div>
 
-        <fieldset>
-            <legend>Dados pessoais</legend>
+        <!-- Hambúrguer 3 -->
+        <!-- <div class="hamburguer">
+            <div class="ingredient top-bun"></div>
+            <div class="ingredient lettuce"></div>
+            <div class="ingredient cheese"></div>
+            <div class="ingredient patty"></div>
+            <div class="ingredient bottom-bun"></div>
+        </div> -->
+    </div>
 
-            <div class="rows">
-                <label for="name">Nome:</label><input placeholder="Digite seu nome" type="text" name="name" id="name">
-                <label for="telefone">Telefone:</label><input placeholder="Digite seu telefone" type="text"
-                    name="telefone" id="telefone">
-            </div>
-        </fieldset><br><br>
-
-        <fieldset>
-            <legend>Endereço</legend>
-            <div class="rows">
-                <label for="cep">Cep:</label><input placeholder="Digite seu CEP" type="text" name="cep" id="cep">
-                <label for="casa">N° da casa:</label><input placeholder="Digite o número da casa" type="text"
-                    name="casa" id="casa">
-            </div><br><br>
-            <div>
-                <time pubdate> 06/12/2024 17:25</time>
-                <article>
-                    <blockquote cite="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis maiores sint quasi enim
-                        deleniti quaerat, at ad! Sit molestias error illum voluptatum quibusdam modi veniam, nihil
-                        omnis? Laboriosam, dolor pariatur.
-                    </blockquote>
-                </article>
-            </div>
-        </fieldset>
-        <div class="btn">
-            <button>Enviar</button>
-            <button type="reset">Limpar</button>
-            <button type="reset"><a href="index.html">Voltar</a></button>
-        </div>
-    </form>
-
-    <script src="script.js"></script>
-
+    <script>
+        // Remover a tela de carregamento quando a página estiver carregada
+        window.onload = function () {
+            document.querySelector('.loading-screen').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>

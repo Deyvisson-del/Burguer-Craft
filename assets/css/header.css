@@ -1,22 +1,29 @@
 /* ------------------------------------------------ */
 /* Estilo do Cabeçalho
 /* ------------------------------------------------ */
+
 .header {
     position: fixed;
+    top: 0;
     width: 100%;
-    background-color: #00A5C5;
+    background: linear-gradient(to left, #2575fc, #00A5c5);
+    /* background-color: #00A5C5; */
     z-index: 1000;
+    /* opacity: 0.1; */
 }
 
 .logomarca {
     width: 20%;
 }
 
+li{
+    list-style-type: none;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
 }
 
 .menu .item-logo {
@@ -45,6 +52,10 @@
 /* ------------------------------------------------ */
 /* Estilo do Carrossel*/
 /* ------------------------------------------------ */
+/* .carousel {
+    margin-top: 7.4%;
+} */
+
 .img-carrossel {
     width: 100%;
 }
