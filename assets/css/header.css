@@ -7,7 +7,6 @@
     top: 0;
     width: 100%;
     background: linear-gradient(to left, #2575fc, #00A5c5);
-    /* background-color: #00A5C5; */
     z-index: 1000;
     /* opacity: 0.1; */
 }
