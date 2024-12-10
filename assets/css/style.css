@@ -2,7 +2,10 @@
 @import './header.css';
 @import './main.css';
 @import './footer.css';
-
+/* body{
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    
+} */
 /* ------------------------------------------------ */
 /*Estilo Global */
 /* ------------------------------------------------ */

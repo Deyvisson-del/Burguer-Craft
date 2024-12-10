@@ -1,5 +1,8 @@
 .title-menu {
-    color: #21909E;
+    background: linear-gradient(45deg, #2575fc, #00A5c5);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 2rem;
     margin-left: 3%;
 }
@@ -8,10 +11,12 @@
     display: flex;
     padding: 20px;
     list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
 }
 
 .menu-produtos li {
-    margin: 1% 0% 3% 10%;
     height: 10%;
     width: 10%;
     border: #21909E solid 1px;
@@ -22,7 +27,6 @@
 /* ------------------------------------------------ */
 .container-about {
     padding: 2%;
-    margin-bottom: 15%;
 }
 
 .title-about {
@@ -65,11 +69,12 @@
 
 
 .container-card {
-    gap: 1%;
+    gap: 3%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5% 2% 2%;
+    margin: 2% 5%;
+    /* background-color: blue; */
 }
 
 
@@ -79,7 +84,10 @@
     align-items: center;
 }
 
-
+.card-img-top{
+    height: 45vh;
+    width: auto;
+}
 .card-body {
     border-radius: 9px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
@@ -350,6 +358,9 @@
 
 .container-menu-product {
     margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-store {
@@ -371,4 +382,11 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.title-background {
+    font-size: 3.5rem;
+    margin: 6% 0% 6%;
+    text-align: center;
+    color: white;
 }

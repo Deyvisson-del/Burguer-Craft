@@ -7,6 +7,9 @@
     top: 0;
     width: 100%;
     background: linear-gradient(to left, #2575fc, #00A5c5);
+    /* background: linear-gradient(to left, #81eafc, #00A5c5); para uma futura mundança*/
+    /* background: linear-gradient(to left, #57dff7, #00A5c5); para uma futura mundança*/
+    /* background: linear-gradient(to left, #34daf7, #00A5c5); para uma futura mundança*/
     z-index: 1000;
     /* opacity: 0.1; */
 }
@@ -34,7 +37,7 @@ li{
     font-size: 1.5rem;
     display: flex;
     gap: 10%;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
 .menu a {
@@ -67,9 +70,3 @@ li{
     font-size: 1.5rem;
 }
 
-.title-background {
-    font-size: 3.5rem;
-    margin: 6% 0% 6%;
-    text-align: center;
-    color: #dcdcdc;
-}
