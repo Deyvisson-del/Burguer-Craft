@@ -34,11 +34,11 @@
 }
 
 .creditos p{
-    font-size: 1rem;
+    font-size: 0.7rem;
     width: 100%;
     text-align: center;
     background: #363533;
     color: white;
-    margin: 0% 0%;
     display: block;
+    margin: 0;
 }
