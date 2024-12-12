@@ -30,7 +30,6 @@
 }
 
 .title-about {
-    /* color: #21909E; */
     background: linear-gradient(45deg, #2575fc, #00A5c5);
     background-clip: text;
     -webkit-background-clip: text;
@@ -52,21 +51,9 @@
     text-indent: 30px
 }
 
-.image-about {
-    width: 15%;
-    float: right;
-    margin: 0% 6%;
-}
-
 /* ------------------------------------------------ */
 /* Estilo dos cards*/
 /* ------------------------------------------------ */
-
-/* 
-.slide{
-    margin: 5% 0 0;
-} */
-
 
 .container-card {
     gap: 3%;
@@ -74,7 +61,6 @@
     justify-content: center;
     align-items: center;
     margin: 2% 5%;
-    /* background-color: blue; */
 }
 
 
@@ -85,19 +71,12 @@
 }
 
 .card-img-top{
-    height: 45vh;
-    width: auto;
+    height: 65vh;
 }
+
 .card-body {
     border-radius: 9px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
-    height: auto;
-    width: 100%;
-}
-
-.card.show {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 
@@ -147,6 +126,7 @@
 
 .imgcard {
     width: 100%;
+    border-radius: 9px 9px 0px 0px;
 }
 
 .title-product {
@@ -311,18 +291,8 @@
     background-repeat: no-repeat;
     width: 100%;
     display: inline-block;
-    margin: 4% 0 0;
 }
 
-.container-store-header {
-    background-image: url('../../img/imagestore.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: inline-block;
-    margin: 5% 0 0;
-}
 
 
 .container-title {
@@ -358,18 +328,27 @@
     align-items: center;
 }
 
+.container-store-header {
+    background-image: url('../../img/imagestore.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    display: inline-block;
+}
+
 .container-store {
     display: flex;
+    justify-content: center;
     list-style-type: none;
     gap: 2%;
-    justify-content: center;
 }
 
 .container-store li {
     height: 10%;
     width: 20%;
     overflow: hidden;
-    margin: 10% 0%;
+    margin: 5% 0% ;
 }
 
 .container-store-main {
@@ -384,4 +363,11 @@
     margin: 6% 0% 6%;
     text-align: center;
     color: white;
+}
+
+.image-about{
+    float: right;
+    margin: 3% 5% 0%;
+    height: 500px;
+    width: 450px;
 }

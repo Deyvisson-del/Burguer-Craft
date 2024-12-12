@@ -3,22 +3,22 @@
 /* ------------------------------------------------ */
 
 .header {
-    position: fixed;
-    top: 0;
+    /* position: fixed;
+    top: 0; */
     width: 100%;
     background: linear-gradient(to left, #2575fc, #00A5c5);
     /* background: linear-gradient(to left, #81eafc, #00A5c5); para uma futura mundança*/
     /* background: linear-gradient(to left, #57dff7, #00A5c5); para uma futura mundança*/
-    /* background: linear-gradient(to left, #34daf7, #00A5c5); para uma futura mundança*/
-    z-index: 1000;
+    /* background: linear-gradient(to left, #34daf7, #00A5c5); para uma futura mundança */
+    /* z-index: 1000; */
     /* opacity: 0.1; */
 }
 
 .logomarca {
-    width: 20%;
+    width: 25%;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
@@ -47,20 +47,12 @@ li{
 }
 
 .menu a:hover {
-    opacity: 0.7;
     border-radius: 5px;
 }
 
 /* ------------------------------------------------ */
 /* Estilo do Carrossel*/
 /* ------------------------------------------------ */
-/* .carousel {
-    margin-top: 7.4%;
-} */
-
-.img-carrossel {
-    width: 100%;
-}
 
 .title-carrossel {
     font-size: 2.7rem;
@@ -70,3 +62,44 @@ li{
     font-size: 1.5rem;
 }
 
+.carousel-img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.efect-shadow {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 9px;
+}
+
+.efect-shadow:hover {
+    border-radius: 9px;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+.efect-shadow2 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.efect-shadow2:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.efect-shadow3 {
+    transition: transform 0.3s ease;
+}
+
+.efect-shadow3:hover {
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+
+.efect-shadow4 {
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.efect-shadow4:hover {
+    transform: scale(1.1);
+    font-size: 1.6rem;
+}
